@@ -1,0 +1,45 @@
+/* src/pages/HomePage.css */
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #0e2d4b; /* Dark background color for sidebar */
+    position: fixed;
+    top: 64px; /* Adjusted to align with the top navigation bar */
+    bottom: 0;
+    left: 0;
+    width: 200px; /* Sidebar width */
+    z-index: 1;
+    padding-top: 50px; /* Adds some margin between the top navigation and sidebar items */
+  }
+  
+  /* Sidebar menu items */
+  .menu-item {
+    color: #fff; /* White text color for menu items */
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .menu-item:hover {
+    background-color: #1890ff; /* Light blue background on hover */
+    color: #fff; /* Ensure text color remains white on hover */
+  }
+  
+  /* Active (selected) menu item */
+  .ant-menu-item-selected {
+    background-color: #95fff170; /* Light blue background for selected item */
+    color: hsl(0, 0%, 100%); /* White text color for selected item */
+  }
+  
+  /* Optional: Animation effect for sidebar */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .sidebar {
+    animation: slideIn 0.5s ease-out; /* Slide-in animation */
+  }
+  
